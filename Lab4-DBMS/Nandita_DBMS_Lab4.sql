@@ -13,16 +13,14 @@ create table supplier(
 Supp_ID int primary key,
 SUPP_NAME varchar(50) NOT NULL,
 SUPP_CITY varchar(50) NOT NULL,
-SUPP_PHONE varchar(50) NOT NULL
-							);
+SUPP_PHONE varchar(50) NOT NULL	);
                             
 create table customer(
 CUS_ID int primary key,
 CUS_NAME VARCHAR(20) NOT NULL,
 CUS_PHONE VARCHAR(10) NOT NULL,
 CUS_CITY VARCHAR(30) NOT NULL,
-CUS_GENDER CHAR
-							);
+CUS_GENDER CHAR	);
                             
 create table category(          
 CAT_ID INT primary key,
