@@ -9,4 +9,6 @@ DSA_Project2 - Sky Scaper Building Schedule and Binary Search Tree-to-Sorted Rig
 
 Hibernate_SpringMVC_CRUDAssignmentWeek13 - Hibernate ORM, Spring MVC, CRUD assignment
 
-Lab5 - Spring :Customer Relationship Management
+Lab5 - Spring :Customer Relationship Management(No Maven, or Spring Boot)
+
+Lab6 - Spring Rest for student registration with CRUD, Auth /Security and H2 database.(Maven, Spring Boot and H2 DB)
