@@ -31,7 +31,7 @@ public class StudentController {
 	}
 
 	@GetMapping("/list")
-	public String listCustomers(Model theModel, Principal user) {
+	public String listStudents(Model theModel, Principal user) {
 		List<Student> students = studentPortal.getAllStudentRecords();
 		theModel.addAttribute("students", students);
 		theModel.addAttribute("principalU",user.getName());
@@ -48,7 +48,7 @@ public class StudentController {
 
 	// Below method works fine.
 	@GetMapping("/delete")
-	public String deleteCustomer(@RequestParam("studentid") int theId) {
+	public String deleteStudent(@RequestParam("studentid") int theId) {
 		this.studentPortal.deleteStudentRecord(theId);
 		return "redirect:/list";
 	}
