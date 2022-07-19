@@ -23,3 +23,10 @@ I have also done the same in program, currently commented, pls uncomment that an
 API is secure, all request are authenticated, the roles authorised. Unnecessary endpoints not exposed to the user.
 
 User , Roles added only by UDS_ADMIN.
+
+
+TRIED A LOT COULD NOT TEST PROPERLY WITH POSTMAN/ Browser
+
+So used Swagger.html... thank you for teaching swagger.
+EVerything worked with POSTMAN, once I added Authentication, it just returned the FORM login HTML with 200 and would not go further. I am trying to resolve that issue.
+Browser worked well with all the GET methods, would not allow me to perform POST/PUT /DELETE methods. And it would return forbidden for Authorization.
