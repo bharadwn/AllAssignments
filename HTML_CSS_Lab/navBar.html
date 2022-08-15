@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+        <style>
+            header{
+                background-color: red;
+                text-align: center;
+                padding:1%;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: x-large;
+                font-weight: bold;
+            }
+            nav{
+                background-color: gray;
+                padding:1%;
+            }
+            a{
+                padding:2px;
+                margin:3px;
+            }
+            div>a{
+                padding:2px;
+                margin:3px;
+                
+            }
+            a:link, a:visited{
+                color: white;
+            }
+            a:active, a:hover{
+                background-color: black;
+            }    
+            div[class^="dropdownBox"] {
+                width:100px;
+                height:10%;
+                background-color: lightgray;
+                display:none;
+            }   
+            a[class="navlink1"]:hover+.dropdownBox1, a[class="navlink1"]:active+.dropdownBox1{
+                display: block;
+                position:fixed;
+                margin-left:60px;
+                padding-left: 10px;
+                padding:3px;
+            }
+            a[class="navlink2"]:hover+.dropdownBox2, a[class="navlink2"]:active+.dropdownBox2{
+                display: block;
+                position:fixed;
+                margin-left:115px;
+                padding-left: 10px;
+                padding:3px;
+            }
+            .dropdownBox1:hover{
+                display: block;
+                position:fixed;
+                padding-left: 10px;
+                margin-left:60px;
+                padding:3px;
+            }
+            .dropdownBox2:hover{
+                display: block;
+                position:fixed;
+                padding-left: 10px;
+                margin-left:115px;
+                padding:3px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+                <p>
+                    Demo of Dropdown
+                </p>
+        </header>
+        
+        <nav id="navBar">
+            <a href="#" >Link 1</a>
+            <a href="##" class="navlink1">Link 2</a>
+            <div class="dropdownBox1" >
+                <a href="####" >DD_Link_1</a><br/>
+                <a href="#####">DD_Link_2</a><br/>
+                <a href="######">DD_Link_3</a>
+            </div>
+            <a href="###" class="navlink2">Link 3</a>       
+            <div class="dropdownBox2">
+                <a href="####">DD_Link_1</a><br/>
+                <a href="#####">DD_Link_2</a><br/>
+                <a href="######">DD_Link_3</a>
+            </div>
+        </nav> 
+        
+    </body>
+</html>

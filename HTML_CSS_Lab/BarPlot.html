@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar plot</title>
+        <style>
+            #plot{
+                /*margin: 10%;
+                margin-left: 35%;
+                width: 500px;
+                */ 
+                height:300px;         
+                background-color: lightgray;   
+                z-index: -1;  
+                margin-bottom: 0px;   
+                margin-top: 5%;      
+            }
+
+            .center {
+                margin:auto;                
+                width: 15%;
+            }
+            #plot_title{
+                color:black;
+                text-align:center;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                vertical-align: bottom;
+                background-color: lightgray;  
+                border: 1px solid transparent; 
+                font-size: medium;
+            }
+            div[id^="bar"] {                  
+                width:30px;
+                height:300px;                
+                background-color: white  ;  
+            }
+            div[id^="bg"] {                                 
+                width:30px;
+                height:300px;                
+                background-color: gray  ;  
+            }
+            #thebars{                
+                /*background: transparent;*/
+                width: 100%;
+                height:300px;
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .row2{
+                display: flex;
+                flex-direction: row;                
+                background-color: lightgray;  
+                border: 1px solid transparent;                 
+            }
+            div>p{
+                width:100%;
+                height:10%;
+                margin-left:20px;
+                margin-right:20px;
+                text-align: center;
+            }
+            div { position: relative; }
+            #thebars>div[id$="bar1"] { 
+                position: absolute; 
+                margin-top: 10px; 
+                left: 10%; 
+                
+            }
+            #thebars>div[id$="bar2"] { 
+                position: absolute; 
+                margin-top: 10px; 
+                left: 43%; 
+            }
+            #thebars>div[id$="bar3"] { 
+                position: absolute; 
+                margin-top: 10px; 
+                left: 75%;  
+            }
+            #bar1{
+                height:70%;
+                animation-name: animation1;
+                animation-duration: 3s;
+            }
+            #bar2{
+                height:60%;
+                animation-name: animation2;
+                animation-duration: 3s;
+            }
+            #bar3{
+                height:20%;
+                animation-name: animation3;
+                animation-duration: 3s;
+            }
+            @keyframes animation1{
+                0%{height:100%}
+                100%{height: 70%;}
+            }
+            @keyframes animation2{
+                0%{height:100%}
+                100%{height: 60%;}
+            }
+            @keyframes animation3{
+                0%{height:100%}
+                100%{height: 20%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="plot" class="center">
+            <div id="thebars" >
+                <div id="bgbar1" ></div>
+                <div id="bar1" ></div>
+                <div id="bgbar2" ></div>
+                <div id="bar2" ></div>
+                <div id="bgbar3" ></div> 
+                <div id="bar3" ></div>  
+                             
+            </div>
+
+            <div class="row2">
+                <p>30%</p>
+                <p>40%</p>
+                <p>80%</p>
+            </div>
+            <div id="plot_title"><h2>Bar plot</h1></div>           
+        </div>
+        
+    </body>
+</html>
