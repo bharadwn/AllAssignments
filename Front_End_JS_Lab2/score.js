@@ -86,8 +86,7 @@ let envQuiz= new Quiz(questions);
 console.log(questions);
 
 function loadQuestions(){
-    if(envQuiz.isEnded()){
-        
+    if(envQuiz.isEnded()){        
         document.getElementById("quiz")
         .innerHTML
         ="<h1>Javascript Quiz</h1> <hr style='margin-bottom: 20px'><h2>Your Score is "+envQuiz.score+"</h2>";
