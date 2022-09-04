@@ -55,16 +55,6 @@ body {
     padding: 10px 10px;
 }
 
-#btn02,#btn12,#btn20,#btn30,#btn43,#btn51{
-    background-color: #01BBFF;
-    width: 250px;
-    font-size: 20px;
-    color: #fff;
-    border: 1px solid #1D3C6A;
-    margin: 10px 40px 10px 0px;
-    padding: 10px 10px;
-}
-
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
     cursor: pointer;
     background-color: #01BBFF;
