@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Test</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="formBody1">
+    <form action="post_action.html" method="">
+      <div class="grid-container">
+        <div class="row">
+          <div class="grid-item item1">
+            <legend class="required">1. Your Contact Details</legend>
+            <div class="container">
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="text"
+                id="pID"
+                name="patientID"
+                placeholder="Patient ID if exists"
+                required
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="PhoneNo eg. 111-222-3333"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+              <!-- <input
+                type="tel"
+                id="contact"
+                name="contact"
+                placeholder="Contact Number"
+                required
+              /> -->
+              <input
+                type="email"
+                id="emailID"
+                name="emailID"
+                placeholder="Email ID"
+                required
+              />
+            </div>
+            <br />
+            <legend class="required">2. Address</legend>
+            <div class="container">
+              <input
+                type="text"
+                id="house"
+                name="houseNumber"
+                placeholder="House number #"
+                required
+              />
+              <input
+                type="text"
+                id="street"
+                name="street"
+                placeholder="Street details"
+                required
+              />
+
+              <input
+                type="text"
+                id="area"
+                name="area"
+                placeholder="Area"
+                required
+              /><input type="hidden" /><br />
+              <div>
+                <label for="district" class="formLabel required">District</label
+                ><br />
+                <select
+                  name="district"
+                  id="district"
+                  class="selectForm"
+                  required
+                >
+                  <option value="choose">Choose</option>
+                  <option value="choose">Bagalakote</option>
+                  <option value="choose">Ballari</option>
+                  <option value="choose">Belagavi</option>
+                  <option value="choose">Bengaluru Rural</option>
+                  <option value="choose">Bengaluru Urban</option>
+                  <option value="choose">Bidar</option>
+                  <option value="choose">Chamarajanagara</option>
+                  <option value="choose">Chikkaballapura</option>
+                  <option value="choose">Chikkamagaluru</option>
+                  <option value="choose">Chitradurga</option>
+                  <option value="choose">Dakshina Kannada</option>
+                  <option value="choose">Davanagere</option>
+                  <option value="choose">Dharwada</option>
+                  <option value="choose">Gadaga</option>
+                  <option value="choose">Kalaburagi</option>
+                  <option value="choose">Hassan</option>
+                  <option value="choose">Haveri</option>
+                  <option value="choose">Kodagu</option>
+                  <option value="choose">Kolar</option>
+                  <option value="choose">Koppala</option>
+                  <option value="choose">Mandya</option>
+                  <option value="choose">Mysuru</option>
+                  <option value="choose">Raichuru</option>
+                  <option value="choose">Ramanagara</option>
+                  <option value="choose">Shivamogga</option>
+                  <option value="choose">Tumakuru</option>
+                  <option value="choose">Udupi</option>
+                  <option value="choose">Uttara Kannada</option>
+                  <option value="choose">Vijayanagara</option>
+                  <option value="choose">Vijayapura</option>
+                  <option value="choose">Yadgiri</option>
+                </select>
+              </div>
+              <br />
+            </div>
+            <legend for="testType" class="formLabel required">
+              3. Choose the Test Type.(Check atleast one box without fail)
+            </legend>
+            <div class="container1">
+              <div>
+                <input
+                  type="radio"
+                  id="CBC"
+                  name="testType"
+                  value="CBC"
+                  required
+                />
+                <label for="CBC">CBC</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="comUrine"
+                  name="testType"
+                  value="completeUrine"
+                  required
+                />
+                <label for="comUrine">Complete Urine</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="lipidProfile"
+                  name="testType"
+                  value="lipidProfile"
+                  required
+                />
+                <label for="lipidProfile">Lipid Profile</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="TSH"
+                  name="testType"
+                  value="TSH"
+                  required
+                />
+                <label for="TSH">Tyroid Stimulating Hormone (TSH)</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="glucose"
+                  name="testType"
+                  value="glucose"
+                  required
+                />
+                <label for="glucose">Glucose Test</label>
+              </div>
+            </div>
+            <br />
+            <legend for="report" class="formLabel required">
+              4. Do you want a hard copy of the report also?
+            </legend>
+            <div class="container1">
+              <input type="radio" id="yes" name="report" value="yes" required />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="report" value="no" required />
+              <label for="no">No</label>
+            </div>
+            <br />
+            <legend for="dateTime" class="required">
+              5. Select Your Comfortable Date and Time
+            </legend>
+            <div class="container1">
+              <input type="date" id="date" name="dateTime" required />
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+          <div class="grid-item item2">
+            <img
+              src="Images\Lab-Test\lab-test.jpg"
+              alt="Lab-Test"
+              id="labImg"
+            />
+          </div>
+        </div>
+        <!--form and img-->
+        <div class="grid-item item3">
+          <input type="reset" value="Reset" class="buttonForm" />
+          <input type="submit" value="Submit" class="buttonForm" id="submit" />
+        </div>
+      </div>
+      <!--grid-container-->
+    </form>
+  </body>
+</html>
