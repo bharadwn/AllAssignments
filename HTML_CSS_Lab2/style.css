@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #7f7f7f;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header {
+  padding-top: 4%;
+  padding-right: 130px;
+  padding-bottom: 2%;
+  background-color: #505050;
+  text-align: right;
+  font-size: 180%;
+  color: white;
+}
+
+ul[class^="dropdownBox"] {
+  overflow: hidden;
+  display: none;
+  list-style: none;
+  background-color: lightgray;
+  position: fixed;
+}
+li a {
+  text-decoration: none;
+  margin: 2px;
+  color: steelblue;
+  padding-left: 20px;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+#toplinks {
+  float: left;
+  color: #f2f2f2;
+
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  z-index: -1;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav li:hover {
+  background-color: black;
+  color: white;
+}
+
+.topnav li.active {
+  background-color: black;
+  color: white;
+}
+.dropdownBox11 {
+  float: left;
+
+  margin-left: 85px;
+  width: 144px;
+  height: 15%;
+  margin-top: 54px;
+  position: fixed;
+  min-height: max-content;
+  padding: 0;
+}
+.dropdownBox22 {
+  float: left;
+
+  margin-left: 248px;
+  width: 120px;
+  height: 24%;
+  margin-top: 54px;
+  position: fixed;
+  min-height: max-content;
+  padding: 0;
+}
+.droplinks {
+  padding: 10px 0px;
+  width: 200px;
+}
+a[class="navlink1"]:hover + .dropdownBox11,
+a[class="navlink1"]:active + .dropdownBox11 {
+  display: block;
+}
+a[class="navlink2"]:hover + .dropdownBox22,
+a[class="navlink2"]:active + .dropdownBox22 {
+  display: block;
+}
+.dropdownBox11:hover {
+  display: block;
+}
+.dropdownBox22:hover {
+  display: block;
+}
+
+.active {
+  background-color: black;
+}
+
+/* #mainContent1 {
+        justify-content: center;
+        margin: auto;
+        border: 2px solid steelblue;
+        min-width: 600px;
+        min-height: 450px;
+        height: 100%;
+      } */
+
+.blankspaX {
+}
+.animation {
+  min-width: 350px;
+  min-height: 250px;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+  animation-name: imageRotation;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  transition: none;
+  animation-play-state: running;
+  justify-content: center;
+  margin: auto;
+  border: 2px solid steelblue;
+  content: url("Images/Animation/ani1.jpg");
+}
+@keyframes imageRotation {
+  0% {
+    content: url("Images/Animation/ani1.jpg");
+  }
+  20% {
+    content: url("Images/Animation/ani2.png");
+  }
+  40% {
+    content: url("Images/Animation/ani3.jpg");
+  }
+  60% {
+    content: url("Images/Animation/ani4.jpg");
+  }
+  80% {
+    content: url("Images/Animation/ani5.jpg");
+  }
+}
+h1 {
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.prodBar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+  row-gap: 30px;
+  width: 92%;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.product {
+  background-color: #f3f3fd;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3%;
+  width: 160px;
+  transition: width 500ms, height 500ms;
+}
+.product:hover {
+  width: 165px;
+}
+.prodTitle {
+  width: max-content;
+  font-weight: bold;
+  margin: 0;
+}
+.proImg {
+  width: 100%;
+  min-width: 100px;
+  min-height: 71px;
+  max-width: 400px;
+  max-height: 285px;
+}
+.prodValue,
+.prodOffer {
+  margin: 0px;
+  color: rgb(0, 128, 200);
+  height: 15px;
+  padding: 1px;
+  font-size: smaller;
+}
+.cartBtn {
+  width: 100%;
+  border: solid 1px blue;
+  border-radius: 5px;
+
+  color: orange;
+  font-weight: bolder;
+  background-color: #e4e7f8;
+}
+
+.product:focus-within {
+  background-color: rgb(250, 234, 230);
+  border: 1px solid rgb(0, 255, 76);
+}
+
+.cartBtn:active + .product,
+.cartBtn:visited + .product {
+  background-color: rgb(250, 234, 230);
+  border: 1px solid rgb(0, 255, 76);
+}
+.products {
+  border: 5px solid black;
+  width: 49%;
+  margin: auto;
+  justify-content: center;
+  padding: 0px;
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-rows: 650px 50px;
+  position: relative;
+  padding: 10px;
+  width: 75%;
+  margin: auto;
+}
+.row {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.2), 0 0 12px 8px rgba(0, 0, 0, 0.19);
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  height: 700px;
+}
+.grid-item {
+  text-align: center;
+  position: relative;
+}
+.item1 {
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin: 0px;
+  max-width: 1000px;
+  width: 95%;
+}
+#labImg {
+  min-width: 500px;
+  max-width: 1000px;
+  width: 100%;
+  height: 98%;
+  max-height: 1000px;
+  min-height: 550px;
+  position: relative;
+}
+.item3 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  position: absolute;
+  top: 10px;
+  justify-self: center;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border-style: none;
+  border-bottom: 1px solid grey;
+  padding: 15px 15px;
+  margin: 20px;
+}
+.selectForm {
+  padding: 10px 10px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 13px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: left;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.container1 {
+  display: subgrid;
+  grid-template-columns: auto;
+  margin: auto;
+  justify-content: left;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+legend {
+  text-align: left;
+}
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.formLabel {
+  margin: auto;
+  justify-content: left;
+  padding: 2px;
+}
+.buttonForm {
+  background-color: rgb(174, 104, 236);
+  color: whitesmoke;
+  border-radius: 4px;
+  border-style: none;
+  padding: 4px 10px;
+  margin-left: 30px;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- <body onload="load_home()"> -->
+  <body>
+    <div class="topnav">
+      <header>
+        <h1>Pharmacy</h1>
+      </header>
+      <a href="#home" onclick="load_home()" id="toplinks" class="active">
+        Home
+      </a>
+      <a class="navlink1" href="#meds" id="toplinks">Our Medicines</a>
+      <ul class="dropdownBox11">
+        <li class="droplinks"><a href="#fever">Fever</a></li>
+        <li class="droplinks"><a href="#pain">Muscle Pain</a></li>
+        <li class="droplinks"><a href="#cnc">Cough and Cold</a></li>
+      </ul>
+      <a class="navlink2" href="#healthcare" id="toplinks">Health Care</a>
+      <ul class="dropdownBox22">
+        <li class="droplinks"><a href="#Baby">Baby Care</a></li>
+        <li class="droplinks"><a href="#Skin">Skin Care</a><br /></li>
+        <li class="droplinks"><a href="#Home">Home Care</a><br /></li>
+        <li class="droplinks"><a href="#Pers">Personal Care</a><br /></li>
+        <li class="droplinks"><a href="#Pet">Pet Care</a></li>
+      </ul>
+      <a
+        href="LabTestForm.html"
+        target="popup"
+        onclick="window.open('LabTestForm.html','popup','width=1700px,height=900px'); return false;"
+        id="toplinks"
+        >Lab Test</a
+      >
+    </div>
+
+    <!-- <div id="mainContent1" width="100%"></div> -->
+    <div class="blankspaX"><img src="Images\blank.jpg" /></div>
+    <div class="animation">
+      <!-- <img src="Images/Animation/ani1.jpg" width="65%" height="42%" /> -->
+    </div>
+    <div class="products">
+      <h1>Covid Care</h1>
+      <div class="prodBar">
+        <div class="product">
+          <p class="prodTitle">Covid Test Kit</p>
+          <div><img class="proImg" src="Images\Products\c1.jpg" /></div>
+          <p class="prodValue">Rs. 40</p>
+          <p class="prodOffer">Offer: Rs. 30/-</p>
+          <button
+            class="cartBtn"
+            name="covid_kit"
+            value="covid_kit"
+            tabindex="0"
+          >
+            Add to cart
+          </button>
+        </div>
+
+        <div class="product">
+          <p class="prodTitle">Covid Essentials</p>
+          <img class="proImg" src="Images\Products\c2.jpg" />
+          <p class="prodValue">Rs. 240</p>
+          <p class="prodOffer">Offer: Rs. 170/-</p>
+          <button class="cartBtn" name="essen" value="essen" tabindex="0">
+            Add to cart
+          </button>
+        </div>
+
+        <div class="product">
+          <p class="prodTitle">Sanitizer Bottle</p>
+          <img class="proImg" src="Images\Products\c3.jpg" />
+          <p class="prodValue">Rs. 99</p>
+          <p class="prodOffer">Offer: Rs. 87/-</p>
+          <button class="cartBtn" name="sani" value="sani" tabindex="0">
+            Add to cart
+          </button>
+        </div>
+
+        <div class="product">
+          <p class="prodTitle">Mask</p>
+          <img class="proImg" src="Images\Products\c4.jpg" />
+          <p class="prodValue">Rs. 45</p>
+          <p class="prodOffer">Offer: Rs. 30/-</p>
+          <button class="cartBtn" name="mask" value="mask" tabindex="0">
+            Add to cart
+          </button>
+        </div>
+      </div>
+      <h1>Diabetes Care</h1>
+      <div class="prodBar">
+        <div class="product">
+          <p class="prodTitle">BGR 34 Tablets</p>
+          <img class="proImg" src="Images\Products\d1.jpg" />
+          <p class="prodValue">Rs. 45</p>
+          <p class="prodOffer">Offer: Rs. 30/-</p>
+          <button class="cartBtn" name="bgrTabs" value="bgrTabs" tabindex="0">
+            Add to cart
+          </button>
+        </div>
+
+        <div class="product">
+          <p class="prodTitle">Chyawanprakash</p>
+          <img class="proImg" src="Images\Products\d2.jpg" />
+          <p class="prodValue">Rs. 45</p>
+          <p class="prodOffer">Offer: Rs. 30/-</p>
+          <button
+            class="cartBtn"
+            name="chyawanprakash"
+            value="chyawanprakash"
+            tabindex="0"
+          >
+            Add to cart
+          </button>
+        </div>
+
+        <div class="product">
+          <p class="prodTitle">Colgate Diabetes</p>
+          <img class="proImg" src="Images\Products\d3.jpg" />
+          <p class="prodValue">Rs. 45</p>
+          <p class="prodOffer">Offer: Rs. 30/-</p>
+          <button class="cartBtn" name="colgate" value="colgate" tabindex="0">
+            Add to cart
+          </button>
+        </div>
+
+        <div class="product">
+          <p class="prodTitle">Unibic Butter Cookies</p>
+          <img class="proImg" src="Images\Products\d4.png" />
+          <p class="prodValue">Rs. 35</p>
+          <p class="prodOffer">Offer: Rs. 30/-</p>
+          <button
+            class="cartBtn"
+            name="covid_kit"
+            value="covid_kit"
+            tabindex="0"
+          >
+            Add to cart
+          </button>
+        </div>
+      </div>
+
+      <!-- <script defer type="text/javascript">
+      function load_home() {
+        console.log(document.getElementById("mainContent1"));
+        document.getElementById("mainContent1").innerHTML =
+          '<object width="100%" height="100%" type="type/html" data="mainBody_index.html" ></object>';
+      }
+
+      // window.onload = function () {
+      //   document.getElementById("mainContent1").innerHTML =
+      //     '<object width="100%" height="100%" type="type/html" data="mainBody_index.html" ></object>';
+      // };
+    </script> -->
+    </div>
+
+    <footer>&copy; Copyright. Only for demonstration purposes</footer>
+  </body>
+</html>
