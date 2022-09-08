@@ -237,6 +237,7 @@ h1 {
 div.grid-container {
   display: grid;
   grid-template-rows: 650px 50px;
+
   position: relative;
   padding: 10px;
   width: 75%;
@@ -245,7 +246,7 @@ div.grid-container {
 .row {
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 570px 550px;
   position: relative;
   box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.2), 0 0 12px 8px rgba(0, 0, 0, 0.19);
   margin: auto;
@@ -266,6 +267,16 @@ div.grid-container {
   max-width: 1000px;
   width: 95%;
 }
+
+.item2 {
+  background-color: #e4e7f8;
+  background-image: url(https://raw.githubusercontent.com/bharadwn/HTML-CSS/8af3046c2c64a174d7f21c3264faf4441d8166dd/HTML_CSS_Lab2/Images/Lab-Test/lab-test.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top right;
+  background-size: 800px 800px;
+}
+
 #labImg {
   min-width: 500px;
   max-width: 1000px;
