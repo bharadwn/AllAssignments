@@ -12,3 +12,9 @@ Hibernate_SpringMVC_CRUDAssignmentWeek13 - Hibernate ORM, Spring MVC, CRUD assig
 Lab5 - Spring :Customer Relationship Management(No Maven, or Spring Boot)
 
 Lab6 - Spring Rest for student registration with CRUD, Auth /Security and H2 database.(Maven, Spring Boot and H2 DB)
+
+HTML CSS Lab 1: one navigation bar and one bar plot
+
+HTML CSS JS 1 : Quiz app in browser
+
+HTML CSS Lab 2: Navigation Bar, animation, form, CSS, HTML and Add to cart button
